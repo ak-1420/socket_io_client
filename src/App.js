@@ -4,7 +4,7 @@ import {useState} from 'react'
 import Chat from './Chat';
 
 
-const socket = io.connect('http://localhost:3001')
+const socket = io.connect('https://one-to-one-chatter.herokuapp.com/')
 
 
 function App() {
