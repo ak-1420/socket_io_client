@@ -44,7 +44,7 @@ export default function Chat({socket , username , room}) {
                {
                    messageList.map((msg) => {
                        return (
-                       <div className="message" id={username === msg.author ? "you" : "other"}>
+                       <div key={msg.message + msg.time} className="message" id={username === msg.author ? "you" : "other"}>
                           <div className="message-content">
                               <p>{msg.message}</p>
                           </div>
